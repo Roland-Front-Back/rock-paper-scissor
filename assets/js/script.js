@@ -33,9 +33,9 @@ function checkGameOver() {
 
     results.appendChild(gameOverMessage);
 
-    rockBtn.disabed = true;
-    paperBtn.disabed = true;
-    scissorsBtn.disabed = true;
+    rockBtn.disabled = true;
+    paperBtn.disabled = true;
+    scissorsBtn.disabled = true;
 
     const resetButton = document.createElement("button");
     resetButton.textContent = "Play Again";
@@ -52,9 +52,9 @@ function resetGame() {
   results.innerHTML =
     "<p>Choose rock, paper, or scissor to start a new game!</p>";
 
-  rockBtn.disabed = false;
-  paperBtn.disabed = false;
-  scissorsBtn.disabed = false;
+  rockBtn.disabled = false;
+  paperBtn.disabled = false;
+  scissorsBtn.disabled = false;
 }
 
 function playRound(event) {
